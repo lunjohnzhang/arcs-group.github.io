@@ -59,6 +59,14 @@
     As a long-term goal, his research focuses on bringing Quality Diversity Optimization and Evolutionary Optimization 
     to Robotics, expanding their applicability and scalability.
 
+- name: Mehul Menon
+  role: masters
+  webpage: https://sites.google.com/view/mehulmenon/
+  enrollment: Master of Science in Robotics, Class 2027
+  headshot: /photos/members/mehulmenon.jpg
+  bio: Mehul received a B.Tech in Mechanical Engineering from the National Institute of Technology, Durgapur in 2024. 
+    His research interests encompass physics-aware task-chaining and planning in dynamic environments, with humans-in-the-loop. 
+    
 - name: He Jiang
   preferred_name: He (Rivers) Jiang
   role: masters
@@ -79,6 +87,15 @@
   headshot: /photos/members/vaibhavsanjay.png
   bio: Vaibhav received Bachelor's degrees in Computer Science and Mathematics from the University of Maryland, College 
     Park in 2025. His research interests are in multi-agent robotics, reinforcement learning, and diffusion models.
+    
+- name: Srikar Gouru
+  role: masters
+  webpage: https://srikarg89.github.io/
+  enrollment: Master of Science in Robotics, Class 2027
+  headshot: /photos/members/srikargouru.jpg
+  bio: Srikar earned a B.S in Computer Science from the University of Virginia in 2025.
+    His research interests include traditional and learning-based approaches to multi-robot planning and cooperative task planning.
+    His goal is to coordinate mobile robots to complete complex tasks faster and more effectively than a single robot could.
 
 - name: Cheng Qian
   role: undergrad
@@ -127,12 +144,3 @@
 - name: Hongzhi Zang
   role: alumnus
   enrollment: Visiting undergraduate student from Computer Science at Tsinghua University, 2024
-
-- name: Srikar Gouru
-  role: masters
-  webpage: https://srikarg89.github.io/
-  enrollment: Master of Science in Robotics, Class 2027
-  headshot: /photos/members/srikargouru.jpg
-  bio: Srikar earned a B.S in Computer Science from the University of Virginia in 2025.
-    His research interests include traditional and learning-based approaches to multi-robot planning and cooperative task planning.
-    His goal is to coordinate mobile robots to complete complex tasks faster and more effectively than a single robot could.
