@@ -15,7 +15,7 @@
 #  award: null
 #  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
 #  publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi]
-#  tags: [mapf, warehouse, arm, traffic]
+#  tags: [mapf, warehouse, arm, traffic, execution]
 #  links:   # You can add additional links not listed below
 #    arXiv: null
 #    Code: null
@@ -60,6 +60,215 @@
     url: null
   abstract: null
 
+- key: HuangIROS25
+  title: Benchmarking Shortcutting Techniques for Multi-Robot-Arm Motion Planning
+  site: https://philip-huang.github.io/mr-shortcut/
+  authors: [Philip Huang, Yorai Shaoul, Jiaoyang Li]
+  equal_contributions: []
+  venue: IROS
+  pages: null
+  year: 2025
+  thumbnail: /files/philiphuang/mr-shortcut-compressed.gif  # Save to /files/[your-folder]/
+  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi]
+  tags: [arm]
+  links:   # You can add additional links not listed below
+    arXiv: https://www.arxiv.org/abs/2508.05027
+    Code: https://github.com/philip-huang/mr-shortcut
+    Poster: null
+    Slides: null
+    Talk: null
+  abstract: "Generating high-quality motion plans for multiple robot
+            arms is challenging due to the high dimensionality of the
+            system and the potential for inter-arm collisions.
+            Traditional motion planning methods often produce motions
+            that are suboptimal in terms of smoothness and execution
+            time for multi-arm systems. Post-processing via
+            shortcutting is a common approach to improve motion quality
+            for efficient and smooth execution. However, in multi-arm
+            scenarios, optimizing one arm's motion must not introduce
+            collisions with other arms. Although existing multi-arm
+            planning works often use some form of shortcutting
+            techniques, their exact methodology and impact on
+            performance are often vaguely described. In this work, we
+            present a comprehensive study quantitatively comparing
+            existing shortcutting methods for multi-arm trajectories
+            across diverse simulated scenarios. We carefully analyze
+            the pros and cons of each shortcutting method and propose
+            two simple strategies for combining these methods to
+            achieve the best performance-runtime tradeoff. Video, code,
+            and dataset are available at
+            https://philip-huang.github.io/mr-shortcut/"
+
+- key: TangIROS25decbs
+  title: Accelerating Focal Search in Multi-Agent Path Finding with Tighter Lower Bounds
+  site: null  # project page
+  authors: [Yimin Tang, Zhenghong Yu, Jiaoyang Li, Sven Koenig]
+  venue: IROS
+  pages: null
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  tags: [mapf]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2503.03779
+    Code: https://github.com/HarukiMoriarty/RUST-CBS
+    Poster: null
+    Slides: null
+    Talk: null
+  abstract: "Multi-Agent Path Finding (MAPF) involves finding
+              collision-free paths for multiple agents while minimizing a
+              cost function—an NP-hard problem. Bounded suboptimal
+              methods like Enhanced Conflict-Based Search (ECBS) and
+              Explicit Estimation CBS (EECBS) balance solution quality
+              with computational efficiency using focal search
+              mechanisms. While effective, traditional focal search faces
+              a limitation: the lower bound (LB) value determining which
+              nodes enter the FOCAL list often increases slowly in early
+              search stages, resulting in a constrained search space that
+              delays finding valid solutions. In this paper, we propose a
+              novel bounded suboptimal algorithm, double-ECBS (DECBS), to
+              address this issue by first determining the maximum LB
+              value and then employing a best-first search guided by this
+              LB to find a collision-free path. Experimental results
+              demonstrate that DECBS outperforms ECBS in most test cases
+              and is compatible with existing optimization techniques.
+              DECBS can reduce nearly 30% high-level Constraint Tree (CT)
+              nodes and 50% low-level focal search nodes. When agent
+              density is moderate to high, DECBS achieves a 23.5% average
+              runtime improvement over ECBS with identical suboptimality
+              bounds and optimizations."
+
+- key: TangIROS25railgun
+  title: "RAILGUN: A Unified Convolutional Policy for Multi-Agent Path Finding across Different Environments and Tasks"
+  site: null  # project page
+  authors: [Yimin Tang, Xiao Xiong, Jingyi Xi, Jiaoyang Li, Erdem Bıyık, Sven Koenig]
+  equal_contributions: [Yimin Tang, Xiao Xiong]
+  venue: IROS
+  pages: null
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  tags: [mapf]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2503.02992
+    Code: null
+    Poster: null
+    Slides: null
+    Talk: null
+  short_version:
+    venue: SoCS
+    year: 2025
+    pages: 273-274
+    url: https://doi.org/10.1609/socs.v18i1.36015
+  abstract: "Multi-Agent Path Finding (MAPF), which focuses on finding
+            collision-free paths for multiple robots, is crucial for
+            applications ranging from aerial swarms to warehouse
+            automation. Solving MAPF is NP-hard so learning-based
+            approaches for MAPF have gained attention, particularly
+            those leveraging deep neural networks. Nonetheless, despite
+            the community's continued efforts, all learning-based MAPF
+            planners still rely on decentralized planning due to
+            variability in the number of agents and map sizes. We have
+            developed the first centralized learning-based policy for
+            MAPF problem called RAILGUN. RAILGUN is not an agent-based
+            policy but a map-based policy. By leveraging a CNN-based
+            architecture, RAILGUN can generalize across different maps
+            and handle any number of agents. We collect trajectories
+            from rule-based methods to train our model in a supervised
+            way. In experiments, RAILGUN outperforms most baseline
+            methods and demonstrates great zero-shot generalization
+            capabilities on various tasks, maps and agent numbers that
+            were not seen in the training dataset."
+
+- key: TanSoCS25
+  title: "Reevaluation of Large Neighborhood Search for MAPF: Findings and Opportunities"
+  site: null  # project page
+  authors: [Jiaqi Tan, Yudong Luo, Jiaoyang Li, Hang Ma]
+  venue: SoCS
+  pages: 212-220
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  doi: 10.1609/socs.v18i1.35996
+  tags: [mapf]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2407.09451
+    Code: https://github.com/ChristinaTan0704/mapf-lns-unified
+    Poster: null
+    Slides: null
+    Talk: null
+  abstract: "Multi-Agent Path Finding (MAPF) aims to arrange collision-free goal-reaching paths for a group of agents. Anytime MAPF solvers based on large neighborhood search (LNS) have gained prominence recently due to their flexibility and scalability, leading to a surge of methods, especially those leveraging machine learning, to enhance neighborhood selection. However, several pitfalls exist and hinder a comprehensive evaluation of these new methods, which mainly include: 1) Lower than actual or incorrect baseline performance; 2) Lack of a unified evaluation setting and criterion; 3) Lack of a codebase or executable model for supervised learning methods. To address these challenges, we introduce a unified evaluation framework, implement prior methods, and conduct an extensive comparison of prominent methods. Our evaluation reveals that rule-based heuristics serve as strong baselines, while current learning-based methods show no clear advantage on time efficiency or improvement capacity. Our extensive analysis also opens up new research opportunities for improving MAPF-LNS, such as targeting high-delayed agents, applying contextual algorithms, optimizing replan order and neighborhood size, where machine learning can potentially be integrated."
+
+- key: LiangSoCS25
+  title: Real-Time LaCAM for Real-Time MAPF
+  authors: [Runzhe Liang, Rishi Veerapaneni, Daniel Harabor, Jiaoyang Li, Maxim Likhachev]
+  equal_contributions: [Runzhe Liang, Rishi Veerapaneni]
+  venue: SoCS
+  pages: 196-200
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  doi: 10.1609/socs.v18i1.35993
+  tags: [mapf]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2504.06091
+    Code: null
+    Poster: null
+    Slides: null
+    Talk: null
+  abstract: "The vast majority of Multi-Agent Path Finding (MAPF) methods with completeness guarantees require planning full-horizon paths. However, planning full-horizon paths can take too long and be impractical in real-world applications. Instead, real-time planning and execution, which only allows the planner a finite amount of time before executing and replanning, is more practical for real-world multi-agent systems. Several methods utilize real-time planning schemes but none are provably complete, which leads to livelock or deadlock. Our main contribution is Real-Time LaCAM, the first Real-Time MAPF method with provable completeness guarantees. We do this by leveraging LaCAM in an incremental fashion. Our results show how we can iteratively plan for congested environments with a cutoff time of milliseconds while still maintaining the same success rate as full-horizon LaCAM. We also show how it can be used with a single-step learned MAPF policy."
+
+- key: ChanSoCS25
+  title: New Mechanisms in Flex Distribution for Bounded Suboptimal Multi-Agent Path Finding
+  authors: [Shao-Hung Chan, Thomy Phan, Jiaoyang Li, Sven Koenig]
+  equal_contributions: []
+  venue: SoCS
+  pages: 47-55
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  doi: 10.1609/socs.v18i1.35975
+  tags: [mapf]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2507.17054
+    Code: https://github.com/shchan13/EECBS-MFD
+    Poster: null
+    Slides: null
+    Talk: null
+  abstract: "Multi-Agent Path Finding (MAPF) is the problem of finding a set of collision-free paths, one for each agent in a shared environment. Its objective is to minimize the sum of path costs (SOC), where the path cost of each agent is defined as the travel time from its start location to its target location. Explicit Estimation Conflict-Based Search (EECBS) is the leading algorithm for bounded-suboptimal MAPF, with the SOC of the solution being at most a user-specified factor w away from optimal. EECBS maintains sets of paths and a lower bound LB on the optimal SOC. Then, it iteratively selects a set of paths whose SOC is at most w times LB and introduces constraints to resolve collisions. For each path in a set, EECBS maintains a lower bound on its optimal path that satisfies constraints. By finding a path with cost at most its threshold, defined as w times its lower bound, EECBS guarantees to find a bounded-suboptimal solution. To speed up EECBS, previous work uses flex distribution to relax the requirement that each path needs to be at most its threshold. Though EECBS with flex distribution guarantees to find a bounded-suboptimal solution, increasing the thresholds may increase the SOC beyond w times LB, forcing EECBS to switch among different sets of paths (whose SOC are still at most w times LB), and thus reducing efficiency. To address this issue, we propose Conflict-Based Flex Distribution that distributes flex in proportion to the number of collisions. We also estimate the extra travel time (i.e., delays) needed to satisfy constraints and propose Delay-Based Flex Distribution. On top of that, we propose Mixed-Strategy Flex Distribution, combining both in a hierarchical framework. We prove that EECBS with our new flex distribution mechanisms is complete and bounded-suboptimal. The experiments show that our approaches outperform the original (greedy) flex distribution. Also, we redesign Focal-A* search from the previous work to improve LB for a congested environment."
+
+- key: HuangRSS25
+  title: "APEX-MR: Multi-Robot Asynchronous Planning and Execution for Cooperative Assembly"
+  site: https://intelligent-control-lab.github.io/APEX-MR/  # project page
+  authors: [Philip Huang, Ruixuan Liu, Shobhit Aggarwal, Changliu Liu, Jiaoyang Li]
+  equal_contributions: [Philip Huang, Ruixuan Liu]
+  venue: RSS
+  pages: null
+  year: 2025
+  thumbnail: /files/philiphuang/apex.gif
+  award: null
+  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi]
+  tags: [arm, execution]
+  links:   # You can add additional links not listed below
+    arXiv: https://arxiv.org/abs/2503.15836
+    Talk: https://drive.google.com/file/d/15iYndy__BhI_r0uGmHVpnUeX8OPo3lT_/preview
+  abstract: "Compared to a single-robot workstation, a multi-robot system offers several advantages: 
+            1) it expands the system’s workspace, 2) improves task efficiency, and, more importantly,
+            3) enables robots to achieve significantly more complex and dexterous tasks, such as cooperative assembly. 
+            However, coordinating the tasks and motions of multiple robots is challenging
+            due to issues, e.g., system uncertainty, task efficiency, algorithm scalability, and safety concerns. 
+            To address these challenges, this paper studies multi-robot coordination and proposes APEX-MR,
+            an asynchronous planning and execution framework designed
+            to safely and efficiently coordinate multiple robots to achieve cooperative assembly, e.g., LEGO assembly. 
+            In particular, APEX-MR provides a systematic approach to post-process multi-robot
+            tasks and motion plans to enable robust asynchronous execution under uncertainty. 
+            Experimental results demonstrate that APEX-MR can significantly speed up 
+            the execution time of many long-horizon LEGO assembly tasks by 48% compared to sequential
+            planning and 36% compared to synchronous planning on average. 
+            To further demonstrate performance, we deploy APEX-MR in a dual-arm system to perform physical LEGO assembly.
+            To our knowledge, this is the first robotic system capable of performing customized LEGO assembly using commercial LEGO bricks. 
+            The experimental results demonstrate that the dual-arm system, with APEX-MR, 
+            can safely coordinate robot motions, efficiently collaborate, and construct complex LEGO structures."
+
 - key: JiangICRA25
   title: "Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding"
   authors: [He Jiang, Yutong Wang, Rishi Veerapaneni, Tanishq Harish Duhan, Guillaume Adrien Sartoretti, Jiaoyang Li]
@@ -67,22 +276,17 @@
   venue: ICRA
   pages: null
   year: 2025
-  tags: [mapf, warehouse]
+  thumbnail: /files/hejiang/JiangICRA25/graphical_abstract.jpg
+  award: Best Paper on Multi-Robot Systems; Best Student Paper
+  tags: [mapf, warehouse, envopt]
   links:
     arXiv: https://arxiv.org/abs/2410.21415
-  abstract: "Lifelong Multi-Agent Path Finding (LMAPF) is a variant of MAPF where agents are continually assigned new 
-            goals, necessitating frequent re-planning to accommodate these dynamic changes. Recently, this field has 
-            embraced learning-based methods, which reactively generate single-step actions based on individual local 
-            observations. However, it is still challenging for them to match the performance of the best search-based 
-            algorithms, especially in large-scale settings. This work proposes an imitation-learning-based LMAPF solver 
-            that introduces a novel communication module and systematic single-step collision resolution and global 
-            guidance techniques. Our proposed solver, Scalable Imitation Learning for LMAPF (SILLM), inherits the fast 
-            reasoning speed of learning-based methods and the high solution quality of search-based methods with the 
-            help of modern GPUs. Across six large-scale maps with up to 10,000 agents and varying obstacle structures, 
-            SILLM surpasses the best learning- and search-based baselines, achieving average throughput improvements of 
-            137.7% and 16.0%, respectively. Furthermore, SILLM also beats the winning solution of the 2023 League of 
-            Robot Runners, an international LMAPF competition sponsored by Amazon Robotics. Finally, we validated SILLM 
-            with 10 real robots and 100 virtual robots in a mockup warehouse environment."
+    Code: https://github.com/DiligentPanda/Scalable-Imitation-Learning-for-LMAPF
+    Poster: null
+    Slides: null
+    Talk: null
+    Project: https://diligentpanda.github.io/SILLM/
+  abstract: "Lifelong Multi-Agent Path Finding (LMAPF) repeatedly finds collision-free paths for multiple agents that are continually assigned new goals when they reach current ones. Recently, this field has embraced learning-based methods, which reactively generate single-step actions based on individual local observations. However, it is still challenging for them to match the performance of the best search-based algorithms, especially in large-scale settings. This work proposes an imitation-learning-based LMAPF solver that introduces a novel communication module as well as systematic single-step collision resolution and global guidance techniques. Our proposed solver, Scalable Imitation Learning for LMAPF (SILLM), inherits the fast reasoning speed of learning-based methods and the high solution quality of search-based methods with the help of modern GPUs. Across six large-scale maps with up to 10,000 agents and varying obstacle structures, SILLM surpasses the best learning- and search-based baselines, achieving average throughput improvements of 137.7% and 16.0%, respectively. Furthermore, SILLM also beats the winning solution of the 2023 League of Robot Runners, an international LMAPF competition. Finally, we validated SILLM with 10 real robots and 100 virtual robots in a mock warehouse environment."
 
 - key: VeerapaneniICRA25
   title: "Work Smarter Not Harder: Simple Imitation Learning with CS-PIBT Outperforms Large Scale Imitation Learning for MAPF"
@@ -115,38 +319,44 @@
   title: Speedup Techniques for Switchable Temporal Plan Graph Optimization
   authors: [He Jiang, Muhan Lin, Jiaoyang Li]
   venue: AAAI
-  pages: null
+  pages: 23212-23221
   year: 2025
-  award: null
-  doi: null
-  tags: [warehouse]
+  thumbnail: /files/hejiang/JiangAAAI25/thumbnail.png
+  award: Oral
+  doi: 10.1609/aaai.v39i22.34487
+  tags: [warehouse, execution]
   links:
     arXiv: https://arxiv.org/abs/2412.15908
     Code: https://github.com/DiligentPanda/STPG
     Poster: null
     Slides: null
     Talk: null
+  abstract: "Multi-Agent Path Finding (MAPF) focuses on planning collision-free paths for multiple agents. However, during the execution of a MAPF plan, agents may encounter unexpected delays, which can lead to inefficiencies, deadlocks, or even collisions. To address these issues, the Switchable Temporal Plan Graph provides a framework for finding an acyclic Temporal Plan Graph with the minimum execution cost under delays, ensuring deadlock- and collision-free execution. Unfortunately, existing optimal algorithms, such as Mixed Integer Linear Programming and Graph-Based Switchable Edge Search (GSES), are often too slow for practical use. This paper introduces Improved GSES, which significantly accelerates GSES through four speedup techniques: stronger admissible heuristics, edge grouping, prioritized branching, and incremental implementation. Experiments conducted on four different map types with varying numbers of agents demonstrate that Improved GSES consistently achieves over twice the success rate of GSES and delivers up to a 30-fold speedup on instances where both methods successfully find solutions."
 
 - key: ZangAAAI25
   title: Online Guidance Graph Optimization for Lifelong Multi-Agent Path Finding
+  site: https://sites.google.com/view/onlineggo
   authors: [Hongzhi Zang, Yulun Zhang, He Jiang, Zhe Chen, Daniel Harabor, Peter J. Stuckey, Jiaoyang Li]
   equal_contributions: [Hongzhi Zang, Yulun Zhang]
   venue: AAAI
-  pages: null
+  pages: 14726-14735
   year: 2025
-  doi: null
-  tags: [warehouse]
+  doi: 10.1609/aaai.v39i14.33614
+  tags: [warehouse, envopt]
   links:
     arXiv: https://arxiv.org/abs/2411.16506
-    Code: null
+    Code: https://github.com/zanghz21/OnlineGGO
+  abstract: We study the problem of optimizing a guidance policy capable of dynamically guiding the agents for lifelong Multi-Agent Path Finding based on real-time traffic patterns. Multi-Agent Path Finding (MAPF) focuses on moving multiple agents from their starts to goals without collisions. Its lifelong variant, LMAPF, continuously assigns new goals to agents. In this work, we focus on improving the solution quality of PIBT, a state-of-the-art rule-based LMAPF algorithm, by optimizing a policy to generate adaptive guidance. We design two pipelines to incorporate guidance in PIBT in two different ways. We demonstrate the superiority of the optimized policy over both static guidance and human-designed policies. Additionally, we explore scenarios where task distribution changes over time, a challenging yet common situation in real-world applications that is rarely explored in the literature.
+
 
 - key: YanAAAI25
   title: Multi-agent Motion Planning for Differential Drive Robots Through Stationary State Search
   authors: [Jingtian Yan, Jiaoyang Li]
+  thumbnail: /files/jingtianyan/aaai25_mass/featured.png
   venue: AAAI
-  pages: null
+  pages: 23360-23368
   year: 2025
-  doi: null
+  doi: 10.1609/aaai.v39i22.34503
   tags: [warehouse, mapf]
   short_version:
     venue: SoCS
@@ -156,14 +366,16 @@
   links:
     arXiv: https://www.arxiv.org/abs/2412.13359
     Code: https://github.com/JingtianYan/MASS-AAAI
+  abstract: "Multi-Agent Motion Planning (MAMP) finds various applications in fields such as traffic management, airport operations, and warehouse automation. In many of these environments, differential drive robots are commonly used. These robots have a kinodynamic model that allows only in-place rotation and movement along their current orientation, subject to speed and acceleration limits. However, existing Multi-Agent Path Finding (MAPF)-based methods often use simplified models for robot kinodynamics, which limits their practicality and realism. In this paper, we introduce a three-level framework called MASS to address these challenges. MASS combines MAPF-based methods with our proposed stationary state search planner to generate high-quality kinodynamically-feasible plans. We further extend MASS using an adaptive window mechanism to address the lifelong MAMP problem. Empirically, we tested our methods on the single-shot grid map domain and the lifelong warehouse domain. Our method shows up to 400% improvements in terms of throughput compared to existing methods."
+  
 
 - key: VeerapaneniAAAI25
   title: Windowed MAPF with Completeness Guarantees
   authors: [Rishi Veerapaneni, Muhammad Suhail Saleem, Jiaoyang Li, Maxim Likhachev]
   venue: AAAI
-  pages: null
+  pages: 23323-23332
   year: 2025
-  doi: null
+  doi: 10.1609/aaai.v39i22.34499
   tags: [mapf]
   links:
     arXiv: https://arxiv.org/abs/2410.01798
@@ -191,25 +403,29 @@
   site: null  # project page
   authors: [Yutong Wang, Tanishq Duhan, Jiaoyang Li, Guillaume Adrien Sartoretti]
   venue: AAAI
-  pages: null
+  pages: 23343-23350
   year: 2025
-  doi: null
+  doi: 10.1609/aaai.v39i22.34501
   tags: [mapf]
+  award: Oral
   links:
     arXiv: https://arxiv.org/abs/2405.17794
 
 ############### 2024 ##################
 - key: ZhangIJCAI24
   title: "Guidance Graph Optimization for Lifelong Multi-Agent Path Finding"
+  site: https://yulunzhang.net/publication/zhang2024ggo/
   authors: [Yulun Zhang, He Jiang, Varun Bhatt, Stefanos Nikolaidis, Jiaoyang Li]
   venue: IJCAI
   pages: 311-320
   year: 2024
   doi: 10.24963/ijcai.2024/35
-  tags: [warehouse]
+  tags: [warehouse, envopt]
+  thumbnail: /files/yulunzhang/thumbnails/ggo.png
   links:
       arXiv: https://arxiv.org/abs/2402.01446
       Code: https://github.com/lunjohnzhang/ggo_public
+  abstract: We study how to use guidance to improve the throughput of lifelong Multi-Agent Path Finding (MAPF). Previous studies have demonstrated that, while incorporating guidance, such as highways, can accelerate MAPF algorithms, this often results in a trade-off with solution quality. In addition, how to generate good guidance automatically remains largely unexplored, with current methods falling short of surpassing manually designed ones. In this work, we introduce the guidance graph as a versatile representation of guidance for lifelong MAPF, framing Guidance Graph Optimization as the task of optimizing its edge weights. We present two GGO algorithms to automatically generate guidance for arbitrary lifelong MAPF algorithms and maps. The first method directly optimizes edge weights, while the second method optimizes an update model capable of generating edge weights. Empirically, we show that (1) our guidance graphs improve the throughput of three representative lifelong MAPF algorithms in eight benchmark maps, and (2) our update model can generate guidance graphs for as large as $93 \times 91$ maps and as many as 3,000 agents.
 
 - key: FriedrichIJCAI24
   title: Scalable Mechanism Design for Multi-Agent Path Finding
@@ -220,9 +436,12 @@
   year: 2024
   doi: 10.24963/ijcai.2024/7
   tags: [mapf]
+  thumbnail: /files/yulunzhang/thumbnails/drone-mech.png
   links:
       arXiv: https://arxiv.org/abs/2401.17044
       Code: https://github.com/lunjohnzhang/MAPF-Mechanism
+      Slides: https://1drv.ms/b/c/6847b8d033285874/Eeco5dx9801JhGedvGUCheUB_-cDJUyejpD8mDxKtgQ90Q?e=XGfJ5q
+  abstract: Multi-Agent Path Finding (MAPF) involves determining paths for multiple agents to travel simultaneously through a shared area toward particular goal locations. This problem is computationally complex, especially when dealing with large numbers of agents, as is common in realistic applications like autonomous vehicle coordination. Finding an optimal solution is often computationally infeasible, making the use of approximate algorithms essential. Adding to the complexity, agents might act in a self-interested and strategic way, possibly misrepresenting their goals to the MAPF algorithm if it benefits them. Although the field of mechanism design offers tools to align incentives, using these tools without careful consideration can fail when only having access to approximately optimal outcomes. Since approximations are crucial for scalable MAPF algorithms, this poses a significant challenge. In this work, we introduce the problem of scalable mechanism design for MAPF and propose three strategyproof mechanisms, two of which even use approximate MAPF algorithms. We test our mechanisms on realistic MAPF domains with problem sizes ranging from dozens to hundreds of agents. Our findings indicate that they improve welfare beyond a simple baseline.
 
 - key: JiangSoCS24
   title: "Scaling Lifelong Multi-Agent Path Finding to More Realistic Settings: Research Challenges and Opportunities"
@@ -232,10 +451,15 @@
   year: 2024
   doi: 10.1609/socs.v17i1.31565
   award: Winner of 2023 League of Robot Runners
-  tags: [mapf, warehouse]
+  tags: [mapf, warehouse, envopt]
+  thumbnail: /files/hejiang/JiangSoCS24/thumbnail.png
   links:
       arXiv: https://arxiv.org/abs/2404.16162
       Code: https://github.com/DiligentPanda/MAPF-LRR2023
+      Poster: null
+      Slides: null
+      Talk: https://youtu.be/vXWZ-b6quHc?si=-aIprjGDnRLOaTXi
+  abstract: "Multi-Agent Path Finding (MAPF) is the problem of moving multiple agents from starts to goals without collisions. Lifelong MAPF (LMAPF) extends MAPF by continuously assigning new goals to agents. We present our winning approach to the 2023 League of Robot Runners LMAPF competition, which leads us to several interesting research challenges and future directions. In this paper, we outline three main research challenges. The first challenge is to search for high-quality LMAPF solutions within a limited planning time (e.g., 1s per step) for a large number of agents (e.g., 10,000) or extremely high agent density (e.g., 97.7%). We present future directions such as developing more competitive rule-based and anytime MAPF algorithms and parallelizing state-of-the-art MAPF algorithms. The second challenge is to alleviate congestion and the effect of myopic behaviors in LMAPF algorithms. We present future directions, such as developing moving guidance and traffic rules to reduce congestion, incorporating future prediction and real-time search, and determining the optimal agent number. The third challenge is to bridge the gaps between the LMAPF models used in the literature and real-world applications. We present future directions, such as dealing with more realistic kinodynamic models, execution uncertainty, and evolving systems."  
 
 - key: ShaoulSoCS24
   title: "Unconstraining Multi-Robot Manipulation: Enabling Arbitrary Constraints in ECBS with Bounded Sub-Optimality"
@@ -270,7 +494,7 @@
   pages: 201-209
   year: 2024
   doi: 10.1609/icaps.v34i1.31477
-  tags: [warehouse]
+  tags: [warehouse, execution]
   links:
     arXiv: https://arxiv.org/abs/2403.18145
     Code: https://github.com/YinggggFeng/Switchable-Edge-Search
@@ -335,6 +559,7 @@
 - key: YanRAL24
   title: "Multi-Agent Motion Planning With Bézier Curve Optimization Under Kinodynamic Constraints"
   authors: [Jingtian Yan, Jiaoyang Li]
+  thumbnail: /files/jingtianyan/ral24_psb/featured.gif
   venue: RAL
   volume: 9,
   number: 3,
@@ -343,7 +568,9 @@
   doi: 10.1109/LRA.2024.3363543
   tags: [mapf, traffic]
   links:
+    arXiv: https://arxiv.org/abs/2311.14145
     Code: https://github.com/JingtianYan/PSB-RAL
+  abstract: "Multi-Agent Motion Planning (MAMP) is a problem that seeks collision-free dynamically-feasible trajectories for multiple moving agents in a known environment while minimizing their travel time. MAMP is closely related to the well-studied Multi-Agent Path-Finding (MAPF) problem. Recently, MAPF methods have achieved great success in finding collision-free paths for a substantial number of agents. However, those methods often overlook the kinodynamic constraints of the agents, assuming instantaneous movement, which limits their practicality and realism. In this paper, we present a three-level MAPF-based planner called PSB to address the challenges posed by MAMP. PSB fully considers the kinodynamic capability of the agents and produces solutions with smooth speed profiles that can be directly executed by the controller. Empirically, we evaluate PSB within the domains of traffic intersection coordination for autonomous vehicles and obstacle-rich grid map navigation for mobile robots. PSB shows up to 49.79% improvements in solution cost compared to existing methods."
 
 - key: SuAAAI24
   title: "Bidirectional Temporal Plan Graph: Enabling Switchable Passing Orders for More Efficient Multi-Agent Path Finding Plan Execution"
@@ -351,7 +578,9 @@
   venue: AAAI
   pages: 17559-17566
   year: 2024
+  thumbnail: /files/jiaoyangli/thumbnails/SuAAAI24.png
   doi: 10.1609/aaai.v38i16.29706
+  tags: [warehouse, execution]
   links:
     arXiv: https://arxiv.org/abs/2401.00315
     Code: https://github.com/YifanSu1301/BTPG
@@ -373,15 +602,20 @@
 ############### 2023 ##################
 - key: ZhangNeurIPS23
   title: "Arbitrarily Scalable Environment Generators via Neural Cellular Automata"
+  site: https://yulunzhang.net/publication/zhang2023nca/
   authors: [Yulun Zhang, Matthew C. Fontaine, Varun Bhatt, Stefanos Nikolaidis, Jiaoyang Li]
   venue: NeurIPS
   pages: 57212-57225
   year: 2023
   publisher: https://papers.nips.cc/paper_files/paper/2023/hash/b2fbf1c9bc92e7ef2f6cab2e8a3e09af-Abstract-Conference.html
+  tags: [warehouse, envopt]
+  thumbnail: /files/yulunzhang/thumbnails/nca_process.gif
   links:
     arXiv: https://arxiv.org/abs/2310.18622
     Code: https://github.com/lunjohnzhang/warehouse_env_gen_nca_public
     Talk: https://slideslive.com/39008681
+  abstract: We study the problem of generating arbitrarily large environments to improve the throughput of multi-robot systems. Prior work proposes Quality Diversity (QD) algorithms as an effective method for optimizing the environments of automated warehouses. However, these approaches optimize only relatively small environments, falling short when it comes to replicating real-world warehouse sizes. The challenge arises from the exponential increase in the search space as the environment size increases. Additionally, the previous methods have only been tested with up to 350 robots in simulations, while practical warehouses could host thousands of robots. In this paper, instead of optimizing environments, we propose to optimize Neural Cellular Automata (NCA) environment generators via QD algorithms. We train a collection of NCA generators with QD algorithms in small environments and then generate arbitrarily large environments from the generators at test time. We show that NCA environment generators maintain consistent, regularized patterns regardless of environment size, significantly enhancing the scalability of multi-robot systems in two different domains with up to 2,350 robots. Additionally, we demonstrate that our method scales a single-agent reinforcement learning policy to arbitrarily large environments with similar patterns.
+
 
 - key: ZhangAR23
   title: "Multi-Robot Geometric Task-and-Motion Planning for Collaborative Manipulation Tasks"
@@ -416,14 +650,18 @@
 
 - key: ZhangIJCAI23
   title: "Multi-Robot Coordination and Layout Design for Automated Warehousing"
+  site: https://yulunzhang.net/publication/zhang2023layout_opt/
   authors: [Yulun Zhang, Matthew C. Fontaine, Varun Bhatt, Stefanos Nikolaidis, Jiaoyang Li]
   venue: IJCAI
   pages: 5503-5511
   year: 2023
   doi: 10.24963/ijcai.2023/611
+  tags: [warehouse, envopt]
+  thumbnail: /files/yulunzhang/thumbnails/dsage-map.gif
   links:
     arXiv: https://arxiv.org/abs/2305.06436
     Code: https://github.com/lunjohnzhang/warehouse_env_gen_public
+  abstract: With the rapid progress in Multi-Agent Path Finding (MAPF), researchers have studied how MAPF algorithms can be deployed to coordinate hundreds of robots in large automated warehouses. While most works try to improve the throughput of such warehouses by developing better MAPF algorithms, we focus on improving the throughput by optimizing the warehouse layout. We show that, even with state-of-the-art MAPF algorithms, commonly used human-designed layouts can lead to congestion for warehouses with large numbers of robots and thus have limited scalability. We extend existing automatic scenario generation methods to optimize warehouse layouts. Results show that our optimized warehouse layouts (1) reduce traffic congestion and thus improve throughput, (2) improve the scalability of the automated warehouses by doubling the number of robots in some cases, and (3) are capable of generating layouts with user-specified diversity measures.
 
 - key: LamICAPS23
   title: "Exact Anytime Multi-Agent Path Finding Using Branch-and-Cut-and-Price and Large Neighborhood Search"
