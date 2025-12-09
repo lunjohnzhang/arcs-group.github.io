@@ -30,6 +30,35 @@
 #  abstract: null
 
 ############### 2025 ##################
+- key: ZhangMRS25
+  title: Destination-to-Chutes Task Mapping Optimization for Multi-Robot Coordination in Robotic Sorting Systems
+  site: https://yulunzhang.net/publication/zhang2025tmo/
+  authors: [Yulun Zhang, Alexandre O. G. Barbosa, Federico Pecora, Jiaoyang Li]
+  equal_contributions: [] # Authors with asterisks
+  venue: MRS # Please always use the name as defined in venues.yml
+              # If venues.yml does not contain the venue, add it to venues.yml first
+  volume: null
+  number: null
+  pages: null
+  year: 2025
+  thumbnail: null  # Save to /files/[your-folder]/
+  award: null
+  doi: null  # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi] 
+  tags: []  # Current tags for research areas: [mapf, warehouse, arm, traffic]
+            # See the research areas page for more details.
+  links: # You can add additional links not listed below 
+    arXiv: null
+    Code: null
+    Poster: null
+    Slides: null
+    Talk: null
+  short_version:
+    venue: null
+    year: null
+    pages: null
+    url: null
+  abstract: null
 
 - key: JiangICRA25
   title: "Deploying Ten Thousand Robots: Scalable Imitation Learning for Lifelong Multi-Agent Path Finding"
