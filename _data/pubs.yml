@@ -42,7 +42,7 @@
   year: 2025
   thumbnail: /files/yulunzhang/thumbnails/task-mapping.png
   award: null
-  doi: null  # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  doi: 10.1109/MRS66243.2025.11357255  # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
   publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi] 
   tags: [mapf, warehouse, envopt]
   links: # You can add additional links not listed below 
@@ -60,10 +60,10 @@
   authors: [Philip Huang, Yorai Shaoul, Jiaoyang Li]
   equal_contributions: []
   venue: IROS
-  pages: null
+  pages: 13258-13265
   year: 2025
   thumbnail: /files/philiphuang/mr-shortcut-compressed.gif  # Save to /files/[your-folder]/
-  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  doi: 10.1109/IROS60139.2025.11246427        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
   publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi]
   tags: [arm]
   links:   # You can add additional links not listed below
@@ -99,10 +99,10 @@
   site: null  # project page
   authors: [Yimin Tang, Zhenghong Yu, Jiaoyang Li, Sven Koenig]
   venue: IROS
-  pages: null
+  pages: 14111-14117
   year: 2025
   thumbnail: null  # Save to /files/[your-folder]/
-  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  doi: 10.1109/IROS60139.2025.11246148        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
   tags: [mapf]
   links:   # You can add additional links not listed below
     arXiv: https://arxiv.org/abs/2503.03779
@@ -139,10 +139,10 @@
   authors: [Yimin Tang, Xiao Xiong, Jingyi Xi, Jiaoyang Li, Erdem Bıyık, Sven Koenig]
   equal_contributions: [Yimin Tang, Xiao Xiong]
   venue: IROS
-  pages: null
+  pages: 8645-8651
   year: 2025
   thumbnail: null  # Save to /files/[your-folder]/
-  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  doi: 10.1109/IROS60139.2025.11247527        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
   tags: [mapf]
   links:   # You can add additional links not listed below
     arXiv: https://arxiv.org/abs/2503.02992
@@ -239,7 +239,7 @@
   year: 2025
   thumbnail: /files/philiphuang/apex.gif
   award: null
-  doi: null        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  doi: 10.15607/RSS.2025.XXI.098        # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
   publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi]
   tags: [arm, execution]
   links:   # You can add additional links not listed below
