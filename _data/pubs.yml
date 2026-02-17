@@ -29,6 +29,38 @@
 #    url: null
 #  abstract: null
 
+############### 2026 ##################
+
+- key: Qian2026qdmapper
+  title: "QD-MAPPER: A Quality Diversity Framework to Automatically Evaluate Multi-Agent Path Finding Algorithms in Diverse Maps"
+  site: https://airtclick.github.io/qdmapper/  # project page
+  authors: [Cheng Qian, Yulun Zhang, Varun Bhatt, Matthew C. Fontaine, Stefanos Nikolaidis, Jiaoyang Li]
+  equal_contributions: [Cheng Qian, Yulun Zhang]
+  venue: AAMAS
+  volume: null
+  number: null
+  pages: null
+  year: 2026
+  thumbnail: /files/yulunzhang/thumbnails/qd-mapf-bench.png  # Save to /files/[your-folder]/
+  award: null
+  doi: null  # doi is shown in bibtex and used as the link to the publisher site when the publisher field is not defined
+  publisher: null  # link to the publisher; we don't need this if the publisher can be reached by https://doi.org/[doi] 
+  links: # You can add additional links not listed below 
+    arXiv: https://arxiv.org/abs/2409.06888
+    Code: https://github.com/AirTClick/QD-MAPPER
+    Poster: https://drive.google.com/file/d/10Z7I7JoEXJlQvY56viCuY8oh8c0g2zMV/view?usp=drive_link
+    Slides: https://1drv.ms/b/c/6847b8d033285874/ES114BsqDDpBh6uzmPjAEFsBIIBw1VY-MlWSgpxlgtZCmg?e=d7rO4z
+    Talk: null
+  short_version:
+   venue: SoCS
+   year: 2024
+   pages: 279-280
+   url: https://doi.org/10.1609/socs.v17i1.31580
+  tags: [mapf]
+  abstract: We use the Quality Diversity (QD) algorithm with Neural Cellular Automata (NCA) to generate benchmark maps for Multi-Agent Path Finding (MAPF) algorithms. Previously, MAPF algorithms are tested using fixed, human-designed benchmark maps. However, such fixed benchmark maps have several problems. First, these maps may not cover all the potential failure scenarios for the algorithms. Second, when comparing different algorithms, fixed benchmark maps may introduce bias leading to unfair comparisons between algorithms. Third, since researchers test new algorithms on a small set of fixed benchmark maps, the design of the algorithms may overfit to the small set of maps. In this work, we take advantage of the QD algorithm to (1) generate maps with patterns to comprehensively understand the performance of MAPF algorithms, (2) be able to make fair comparisons between two MAPF algorithms, providing further information on the selection between two algorithms and on the design of the algorithms. Empirically, we employ this technique to generate diverse benchmark maps to evaluate and compare the behavior of different types of MAPF algorithms, including search-based, priority-based, rule-based, and learning-based algorithms. Through both single-algorithm experiments and comparisons between algorithms, we identify patterns where each algorithm excels and detect disparities in runtime or success rates between different algorithms.
+
+
+
 ############### 2025 ##################
 - key: ZhangMRS25
   title: Destination-to-Chutes Task Mapping Optimization for Multi-Robot Coordination in Robotic Sorting Systems
@@ -38,7 +70,7 @@
   venue: MRS
   volume: null
   number: null
-  pages: null
+  pages: 1-7
   year: 2025
   thumbnail: /files/yulunzhang/thumbnails/task-mapping.png
   award: null
@@ -378,23 +410,6 @@
   links:
     arXiv: https://arxiv.org/abs/2410.01798
 
-
-#- key: QianAAAI25
-#  title: A Quality Diversity Approach to Automatically Generate Multi-Agent Path Finding Benchmark Maps
-#  site: null  # project page
-#  authors: [Cheng Qian, Yulun Zhang, Varun Bhatt, Matthew Christopher Fontaine, Stefanos Nikolaidis, Jiaoyang Li]
-#  equal_contributions: [Cheng Qian, Yulun Zhang]
-#  venue: AAAI
-#  pages: null
-#  year: 2025
-#  doi: null
-#  links:
-#    arXiv: https://arxiv.org/abs/2409.06888
-#  short_version:
-#    venue: SoCS
-#    year: 2024
-#    pages: 279-280
-#    url: https://doi.org/10.1609/socs.v17i1.31580
 
 - key: WangAAAI25
   title: "LNS2+RL: Combining Multi-agent Reinforcement Learning with Large Neighborhood Search in Multi-agent Path Finding"
