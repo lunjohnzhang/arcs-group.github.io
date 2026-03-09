@@ -94,7 +94,7 @@ A TPG has two important properties:
 Consequently, constructing and optimizing TPGs can be effectively abstracted as some graph problems.
 For example, we can dynamically re-optimize the passing order at every location based on the current robot
 progress by searching for acyclic TPGs that lead to better execution time. 
-We can also preprocesses the TPG graph by identifying noncritical passing orders, 
+We can also preprocess the TPG graph by identifying noncritical passing orders, 
 whose modification will not lead to deadlocks. 
 Moreover, this execution framework can be applied to various robotic systems, 
 such as mobile robots as well as robotic arms.
